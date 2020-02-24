@@ -1,0 +1,10 @@
+---
+title: Let's get the can rolling
+---
+
+I've been thinking about putting some of my experiences as a software dev to paper for way to many years.
+In the effort of getting stuff done before I kick the bucket: no more excuses, no more getting things perfect.
+
+This will be raw and wrong and opinionated but at least it will be there. And maybe someone finds it useful.
+
+Dom
