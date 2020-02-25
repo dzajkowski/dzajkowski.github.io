@@ -46,8 +46,11 @@ if [ $? -eq 0 ]; then
   git add -A
   git commit -m "$2"
   git push origin -u HEAD
+  git checkout develop
 else
   echo 1>&2 "Did not push to develop, stopping."
   exit 3
 fi
 ```
+
+`rm -rf index.html archive.html posts css` seeems very flimsy but for now it works. Win!

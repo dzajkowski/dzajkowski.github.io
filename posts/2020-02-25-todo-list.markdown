@@ -1,0 +1,8 @@
+---
+title: "[ToDo] What I want to add to the engine"
+---
+
+- [ ] proper syntax highlighting
+- [ ] tags
+- [ ] how to embed files?
+- [ ] how to integrate https://github.com/chrissound/GitChapter
