@@ -17,6 +17,7 @@ git commit -m "$1"
 git push origin -u HEAD
 if [ $? -eq 0 ]; then
   git checkout master
+  rm -rf index.html archive.html posts css
   cp -a _site/. .
   git add -A
   git commit -m "$2"
