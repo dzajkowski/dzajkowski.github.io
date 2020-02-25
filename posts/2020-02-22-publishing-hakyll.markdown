@@ -31,7 +31,11 @@ if [ $# -ne 1 ] && [ $# -ne 2 ]; then
   exit 3
 fi
 
+stack clean
+stack build
+stack exec dz clean
 stack exec dz build
+
 git add -A
 git commit -m "$1"
 git push origin -u HEAD
