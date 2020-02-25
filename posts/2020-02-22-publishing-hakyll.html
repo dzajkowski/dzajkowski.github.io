@@ -60,14 +60,15 @@
 <a class="sourceLine" id="cb2-17" title="17"><span class="fu">git</span> push origin -u HEAD</a>
 <a class="sourceLine" id="cb2-18" title="18"><span class="kw">if</span><span class="bu"> [</span> <span class="va">$?</span> <span class="ot">-eq</span> 0<span class="bu"> ]</span>; <span class="kw">then</span></a>
 <a class="sourceLine" id="cb2-19" title="19">  <span class="fu">git</span> checkout master</a>
-<a class="sourceLine" id="cb2-20" title="20">  <span class="fu">cp</span> -a _site/. .</a>
-<a class="sourceLine" id="cb2-21" title="21">  <span class="fu">git</span> add -A</a>
-<a class="sourceLine" id="cb2-22" title="22">  <span class="fu">git</span> commit -m <span class="st">&quot;</span><span class="va">$2</span><span class="st">&quot;</span></a>
-<a class="sourceLine" id="cb2-23" title="23">  <span class="fu">git</span> push origin -u HEAD</a>
-<a class="sourceLine" id="cb2-24" title="24"><span class="kw">else</span></a>
-<a class="sourceLine" id="cb2-25" title="25">  <span class="bu">echo</span> <span class="op">1&gt;&amp;2</span> <span class="st">&quot;Did not push to develop, stopping.&quot;</span></a>
-<a class="sourceLine" id="cb2-26" title="26">  <span class="bu">exit</span> 3</a>
-<a class="sourceLine" id="cb2-27" title="27"><span class="kw">fi</span></a></code></pre></div>
+<a class="sourceLine" id="cb2-20" title="20">  <span class="fu">rm</span> -rf index.html archive.html posts css</a>
+<a class="sourceLine" id="cb2-21" title="21">  <span class="fu">cp</span> -a _site/. .</a>
+<a class="sourceLine" id="cb2-22" title="22">  <span class="fu">git</span> add -A</a>
+<a class="sourceLine" id="cb2-23" title="23">  <span class="fu">git</span> commit -m <span class="st">&quot;</span><span class="va">$2</span><span class="st">&quot;</span></a>
+<a class="sourceLine" id="cb2-24" title="24">  <span class="fu">git</span> push origin -u HEAD</a>
+<a class="sourceLine" id="cb2-25" title="25"><span class="kw">else</span></a>
+<a class="sourceLine" id="cb2-26" title="26">  <span class="bu">echo</span> <span class="op">1&gt;&amp;2</span> <span class="st">&quot;Did not push to develop, stopping.&quot;</span></a>
+<a class="sourceLine" id="cb2-27" title="27">  <span class="bu">exit</span> 3</a>
+<a class="sourceLine" id="cb2-28" title="28"><span class="kw">fi</span></a></code></pre></div>
 
     </div>
     <div id="footer">
