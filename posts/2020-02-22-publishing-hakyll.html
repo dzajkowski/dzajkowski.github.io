@@ -65,10 +65,12 @@
 <a class="sourceLine" id="cb2-22" title="22">  <span class="fu">git</span> add -A</a>
 <a class="sourceLine" id="cb2-23" title="23">  <span class="fu">git</span> commit -m <span class="st">&quot;</span><span class="va">$2</span><span class="st">&quot;</span></a>
 <a class="sourceLine" id="cb2-24" title="24">  <span class="fu">git</span> push origin -u HEAD</a>
-<a class="sourceLine" id="cb2-25" title="25"><span class="kw">else</span></a>
-<a class="sourceLine" id="cb2-26" title="26">  <span class="bu">echo</span> <span class="op">1&gt;&amp;2</span> <span class="st">&quot;Did not push to develop, stopping.&quot;</span></a>
-<a class="sourceLine" id="cb2-27" title="27">  <span class="bu">exit</span> 3</a>
-<a class="sourceLine" id="cb2-28" title="28"><span class="kw">fi</span></a></code></pre></div>
+<a class="sourceLine" id="cb2-25" title="25">  <span class="fu">git</span> checkout develop</a>
+<a class="sourceLine" id="cb2-26" title="26"><span class="kw">else</span></a>
+<a class="sourceLine" id="cb2-27" title="27">  <span class="bu">echo</span> <span class="op">1&gt;&amp;2</span> <span class="st">&quot;Did not push to develop, stopping.&quot;</span></a>
+<a class="sourceLine" id="cb2-28" title="28">  <span class="bu">exit</span> 3</a>
+<a class="sourceLine" id="cb2-29" title="29"><span class="kw">fi</span></a></code></pre></div>
+<p><code>rm -rf index.html archive.html posts css</code> seeems very flimsy but for now it works. Win!</p>
 
     </div>
     <div id="footer">
